@@ -4,8 +4,8 @@ class Character {
     this._health = health;
     this._strength = strength;
     this._range = range;
-    this.luck = luck;
-    this.magic = magic;
+    this._luck = luck;
+    this._magic = magic;
   }
 }
 
@@ -17,12 +17,12 @@ class Human extends Character {
 
 class Elf extends Character {
   constructor(name) {
-    super(name, 75, 25, 50, 50, false);
+    super(name, 75, 25, 50, 50, true);
   }
 }
 
 class Hobbit extends Character {
   constructor(name) {
-    super(name, 50, 50, 25, 75, true);
+    super(name, 50, 50, 25, 75, false);
   }
 }
